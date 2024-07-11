@@ -1,0 +1,717 @@
+@font-face {
+    font-family: "Museo";
+    src: url(./Museo300-Regular.otf);
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #000000;
+    margin: 0;
+    overflow-x:  hidden;
+}
+.section1{
+    display: flex;
+    width: 100%;
+    height: 1200px;
+    background-color: #222222;
+    z-index: 0;
+}
+.nav{
+    z-index: 3;
+    width: 100%;
+    height: 108px;
+    position: relative;
+    background-color: transparent;
+    border-bottom: 2px dotted #f8de01;
+    line-height: 70px;
+    padding: 0 30px;
+}
+.logo img{
+    top: 20%;
+    left: 20%;
+    position: absolute;
+    width: 90px;
+    height: 50px;
+}
+.menu{
+    float: right;
+    line-height: 70px;
+    padding: 0 30px;
+    display: flex;
+    right: 10%;
+    position: relative;
+    top: 15%;
+    
+}
+.menu-itm a{
+    font-family: 'Museo';
+    float: left;
+    padding-left: 30px;
+    font-size: 17px;
+    color: #ffffff;
+}
+#border span{
+    padding-left: 10px;
+    position: absolute;
+    top: -2px;
+    color: #ffae00;
+    width: 5px;
+}
+.left_triangle{
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-bottom: 232px solid transparent;
+    border-left: 232px solid #ffae00;
+    z-index: 1;
+}
+.left_tri2{
+    width: 0; 
+    height: 0; 
+    border-bottom: 76px solid transparent;
+    border-left: 76px solid #f8de01;
+    z-index: 2;  
+    position: absolute;
+    top: 23%;
+    left: 3%; 
+}
+.right_triangle{
+    right: 0;
+    top: -15%;
+    width: 0; 
+    height: 0; 
+    border-top: 200px solid transparent;
+    border-bottom: 200px solid transparent;
+    border-right: 170px solid #f8de01;
+    z-index: 2;  
+    position: absolute;
+}
+.right_tri2{
+    right: 0;
+    width: 0; 
+    top: 22%;
+    height: 0; 
+    border-top: 450px solid transparent;
+    border-bottom: 450px solid transparent;
+    border-right: 400px solid #ffae00;
+    z-index: 2;  
+    position: absolute;
+}
+.ban_img_container{
+    position: absolute;
+    display: flex;
+    top: 150px;
+    right: 190px;
+}
+.ban_txt{
+    position: relative;
+    left: 0;
+}
+.ban_img_container h3{
+    position: relative;
+    font-size: 60px;
+    line-height: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'Museo';
+}
+.ban_txt p{
+    word-spacing: 3px;
+    line-height: 15px;
+    width: 420px;
+    height: 216px;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "Museo";
+}
+.ban_txt .btn1{
+    opacity: 0.600;
+    top: 360px;
+    left: 10px;
+    position: absolute;
+    transform: skew(-25deg);
+    width: 170px;
+    height: 48px;
+    background-color: transparent;
+    border: 1px solid #f8e401;
+}
+.btn1 p{
+    position: absolute;
+    left: 68px;
+    transform: skew(25deg);
+    font-size: 20px;
+    color: #9cf801;
+    font-family: "Museo";
+    font-weight: bold;
+}
+
+.ban_img{
+    display: flex;
+}
+.back{
+    position: relative;
+    z-index: 2;
+    height: 400px;
+}
+.front{
+    height: 400px;
+    position: absolute;
+    z-index: 3;
+}
+.dot_line{
+    display: flex;
+    position: absolute;
+    left: 80%;
+}
+.dot_line .box{
+    transform: skew(-25deg);
+    margin-right: 10px;
+    width: 15px;
+    height: 9px;
+    background-color: #ffae00;
+    border: 1px solid #ffae00;
+}
+.dot_line .box:nth-child(3){
+    width: 15px;
+    height: 9px;
+    background-color: #ffffff;
+    border: 1px solid #9cf801;
+}
+.fitness_div_container{
+    position: absolute;
+}
+.fit_img_container{
+    display: grid;
+}
+.left_tri3{
+    left: 0;
+    width: 0; 
+    height: 0; 
+    border-top: 46px solid transparent;
+    border-bottom: 46px solid transparent;
+    border-left: 46px solid #f8de01;
+    z-index: 2;  
+    position: absolute;
+    top: 780px;
+}
+.left_tri4{
+    left: 0;
+    width: 0; 
+    height: 0; 
+    border-top: 386px solid transparent;
+    border-bottom: 386px solid transparent;
+    border-left: 246px solid #ffae00;
+    z-index: 2;  
+    position: absolute;
+    top: 880px;
+}
+.row1, .row2{
+    
+    position: absolute;
+    top: 750px;
+    left: 140px;
+    display: flex;
+}
+.fit1, .fit2, .fit3,.fit4{
+    margin-right: 25px;
+    width: 500px;
+    height: 266px;
+    background-color: #000000;
+    z-index: 3;
+    overflow: hidden;
+    display: flex;
+}
+.fit1 h2,.fit2 h2,.fit3 h2,.fit4 h2{
+    font-size: 25px;
+    color: #ffffff;
+    font-family: "Museo";
+    z-index: 4;
+}
+.r1_txt{
+    padding-top: 10px;
+    padding-left: 30px;
+}
+.fit1 p,.fit2 p, .fit3 p, .fit4 p{
+    float: left;
+    z-index: 4;
+    width: 206px;
+    height: 59px;
+    font-size: 13px;
+    color: #ffffff;
+    font-family: "Museo";
+}
+.row2{
+    top: 1000px;
+    margin-top: 25px;
+    padding-top: 15px;
+}
+.fit1 .fit_tri1, .fit4 .fit_tri1{
+    right: 0;
+    float: right;
+    top: -180px;
+    width: 0; 
+    height: 0; 
+    border-top: 475px solid transparent;
+    border-right: 440px solid #f8de01;
+    right: 64px;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+}
+.fit1 img{
+    height: 266px;
+    left: 281px;
+    position: absolute;
+    z-index: 4;
+}
+.fit2, .fit3{
+    background-color: #f8de01;
+}
+.fit2 p, .fit2 h2, .fit3 p, .fit3 h2{
+    color: #000000;
+}
+.fit2 .fit_tri2, .fit3 .fit_tri2{
+    right: 0;
+    float: right;
+    top: -180px;
+    width: 0; 
+    height: 0; 
+    border-top: 500px solid transparent;
+    border-right: 420px solid #000000;
+    right: 64px;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+} 
+.fit2 img{
+    right: 25px;
+    bottom: 0;
+    height: 236px;
+    float: right;
+    position: absolute;
+    z-index: 4;
+}
+.fit3 img{
+    left: 255px;
+    bottom: 0;
+    height: 266px;
+    position: absolute;
+    z-index: 4;
+}
+.fit4 img{
+    right: 25px;
+    bottom: 0;
+    height: 246px;
+    float: right;
+    position: absolute;
+    z-index: 4;
+}
+.section1::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 207%;
+    width: 100%;
+    height: 30%;
+    background-color: #dde6e8; /* Set the same color as the background */
+    transform: skewY(-7deg); /* Rotate only the bottom part */
+    transform-origin: left bottom;  
+    z-index: 3;
+}
+.section2{
+    position: relative;
+    width: 100%;
+    top: 66px;
+    z-index: 2;
+    text-align: center;
+    height: 1388px;
+    background-color: #dde6e8;
+    border-top: 2px solid transparent;
+}
+.section2_material{
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 150px;
+    text-align: center;
+}
+.section2_material h2{
+    z-index: 5;
+    font-size: 42px;
+    color: #000000;
+    font-family: "Museo";
+    text-align: center;
+}
+.section2_material p{
+    position: absolute;;
+    left: 137px;
+    width: 939px;
+    height: 168px;
+    font-size: 16px;
+    color: #000000;
+    font-family: "Museo";
+    text-align: center;
+}
+.s2_img_container{
+    position: relative;
+    display: flex;
+    top: 150px;
+    left: 100px;
+}
+.i1,.i2,.i3{
+    margin-right: 20px;
+    width: 348px;
+    height: 315px;
+    background-color: #ffffff;
+    display: grid;
+}
+.i_img_container{
+    margin: 15px;
+    z-index: 3;
+    position: absolute;
+    width: 317px;
+    height: 251px;
+    background-color: #dde6e8;
+}
+.i_img_container img{
+    margin-top: 20px;
+}
+.img_price{
+    position: absolute;
+    left: -43%;
+    bottom: 0;
+    height: 50px;
+}
+.img_price p,.img_price1,.img_price2{
+    color: #000000;
+}
+.img_price span,.img_price1 span,.img_price2 span{
+    position: relative;
+    left: 22%;
+}
+.img_price1{
+    position: absolute;
+    left: -13%;
+    bottom: 0;
+    height: 50px;
+}
+.img_price2{
+    position: absolute;
+    left: 16%;
+    bottom: 0;
+    height: 50px;
+}
+.section2::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 62%;
+    width: 100%;
+    height: 20%;
+    background-color: #ffffff; /* Set the same color as the background */
+    transform: skewY(7deg); /* Rotate only the bottom part */
+    transform-origin: left bottom;  
+    z-index: 3;
+}
+.section3{
+    position: relative;
+    z-index: 4;
+    top: -200px;
+    width: 100%;
+    height: 1388px;
+    background-color: #ffffff;
+}
+.s3_img_container{
+    position: absolute;
+    display: flex;
+    z-index: 5;
+    right: 15%;
+    top: -17%;
+}
+.s3_img_container img{
+    width: 700px;
+    height: 500px;
+    margin-left: 50px;
+}
+.s3_txt{
+    position: relative;
+    top: 70px;
+    left: 10%;
+}
+.s3_txt h2{
+    position: relative;
+    width: 350px;
+    font-size: 40px;
+    line-height: 36px;
+    color: #000000;
+    font-family: "Museo";
+    text-transform: uppercase;
+}
+.s3_txt p{
+    position: absolute;
+    width: 500px;
+    font-size: 16px;
+    color: #000000;
+    font-family: "Museo";
+}
+.btn2{
+    bottom: 120px;
+    left: 10px;
+    position: absolute;
+    transform: skew(-25deg);
+    width: 120px;
+    height: 48px;
+    background-color: transparent;
+    border: 2px solid #000000;
+}
+.btn2 p{
+    position: absolute;
+    left: 23px;
+    bottom: -11px;
+    transform: skew(25deg);
+    font-size: 20px;
+    color: #000000;
+    font-family: "Museo";
+    font-weight: bold;
+}
+.section3::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 32%;
+    width: 100%;
+    height: 20%;
+    background-color: #ffae00; /* Set the same color as the background */
+    transform: skewY(-7deg); /* Rotate only the bottom part */
+    transform-origin: left bottom;  
+    z-index: 3;
+}
+.section4{
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 1288px;
+    top: 33%;
+    background-color: #ffae00;
+}
+.container{
+    display: flex;
+}
+.s4_img_container{
+    position: relative;
+    top: -100px;
+    left: 100px;
+}
+.s4_img_container img{
+    position: relative;
+    z-index: 7;
+}
+.s4_txt_container{
+    z-index: 7;
+    position: relative;
+    right: -200px;
+}
+.s4_txt_container h2{
+    position: relative;
+    width: 350px;
+    font-size: 40px;
+    line-height: 36px;
+    color: #ffffff;
+    font-family: "Museo";
+    text-transform: uppercase;
+}
+.s4_txt_container p{
+    position: absolute;
+    width: 500px;
+    height: 92px;
+    font-size: 16px;
+    color: #000000;
+    font-family: "Museo";
+}
+.btn3{
+    position: relative;
+    bottom: -100px;
+    right: -30px;
+    transform: skew(-25deg);
+    width: 120px;
+    height: 48px;
+    background-color: transparent;
+    border: 2px solid #000000;
+}
+.btn3 p{
+    position: relative;
+    left: 33px;
+    bottom: 10px;
+    transform: skew(25deg);
+    font-size: 20px;
+    color: #000000;
+    font-family: "Museo";
+    font-weight: bold;
+}
+.section4::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 35%;
+    width: 100%;
+    height: 20%;
+    background-color: #222222; /* Set the same color as the background */
+    transform: skewY(7deg); /* Rotate only the bottom part */
+    transform-origin: left bottom;  
+    z-index: 3;
+}
+.section5{
+    top: 10%;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: #222222;
+    display: grid;
+}
+.s5_txt_container{
+    float: left;
+    display: flex;
+    position: relative;
+    left: 100px;
+    z-index: 7;
+    top: -90px
+}
+.s5_txt_container h2{
+    font-size: 27px;
+    color: #ffffff;
+    font-family: "Museo";
+}
+.s5_txt_container span{
+    font-size: 27px;
+    color: #f8de01;
+    font-family: "Museo";
+}
+.s5_right{
+    transform: skew(-25deg);
+    z-index: 7;
+    right: 200px;
+    float: right;
+    position: absolute;
+}
+.s5_right input{
+    top: -45px;
+    border: 1px solid #ffffff;
+    padding-left: 20px;
+    position: relative;
+    font-size: 15px;
+    width: 339px;
+    height: 52px;
+    color: #a7a7a7;
+    background-color: transparent;
+    font-family: "Museo";
+}
+.s5_right input[type=submit]{
+    width: 169px;
+    height: 53px;
+    background-color: #212121;
+    color: #ffde00;
+    border: 1px solid #ffde00;
+}
+.section5::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 35%;
+    width: 100%;
+    height: 26%;
+    background-color: #000000; /* Set the same color as the background */
+    transform: skewY(-7deg); /* Rotate only the bottom part */
+    transform-origin: left bottom;  
+    z-index: 3;
+}
+.section6{
+    top: 21%;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #000000;
+    display: flex;
+    z-index: 8;
+}
+.s6_logo{
+    width: 304px;
+    height: 166px;
+    position: relative;
+    top: 20px;
+    z-index: 9;
+    left: 100px;
+    display: grid;
+}
+.s6_txt{
+    position: relative;
+    left: 40px;
+}
+.s6_txt p{
+    width: 354px;
+    height: 221px;
+    font-size: 15px;
+    color: #ffffff;
+    font-family: "Museo";
+}
+.footer{
+    position: absolute;
+    right: 30px;
+    z-index: 9;
+    top: 80px;
+}
+.footer table{
+    opacity: 0.7;
+}
+.footer table tr{
+    height: 20px;
+}
+.footer table th{
+    position: relative;
+    font-size: 15px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Museo";
+}
+.footer table td{
+    position: relative;
+    left: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    color: #ffffff;
+    font-family: "Museo";
+}
+.footer table td a,th a{
+    color: #ffffff;
+}
+.copyrights{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    height: 108px;
+    top: 10;
+    background-color: #111111;
+    text-align: center;
+}
+.copyrights p{
+    position: relative;
+    top: 20px;
+    font-size: 15px;
+    color: #ffffff;
+    font-family: "Museo";
+}
+.copyrights p span{
+    font-size: 15px;
+    color: #f8e401;
+    font-family: "Museo";
+}
